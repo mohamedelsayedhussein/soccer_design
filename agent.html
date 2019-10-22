@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/pace-theme-minimal.css">
+    <!-- jQuery ui style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <!-- datatables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.css"/>
+    <!-- custom style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- start header -->
+    <header>
+        <div class="container">
+            <nav class='d-flex align-items-center justify-content-between'>
+                <div class="main-nav d-flex align-items-center">
+                    <div class="logo">
+                        <a href='index.html'><img class='img-fluid' src="logo.png" alt=""></a>
+                    </div>
+                    <div class="links ml-5">
+                        <ul class='d-flex align-items-center capital-text'>
+                            <li class='item mr-4'><a class='link text-white' href="">feed</a></li>
+                            <li class='item mr-4'><a class='link text-white' href="">profile</a></li>
+                            <li class='item mr-4'><a class='link text-white' href="">players</a></li>
+                            <li class='item mr-4'><a class='link text-white' href="agent.html">agents</a></li>
+                            <li class='item'><a class='link text-white' href="">football hub store</a></li>
+                        </ul>
+                    </div> <!-- ./links -->
+                </div> <!-- ./main-nav -->
+                <div class="other-links">
+                    <ul class='d-flex align-items-center capital-text'>
+                        <li class='mr-3'><a href="">update my profile</></li>
+                        <li><a href="">logout</a></li>
+                    </ul>
+                </div> <!-- ./other links -->
+                <div class="hamburger">
+                    <span class='line'></span>
+                    <span class='line'></span>
+                    <span class='line'></span>
+                </div> <!-- ./hamburger -->
+            </nav> <!-- ./nav -->
+        </div> <!-- ./container -->
+    </header> <!-- ./header -->
+    <!-- end header -->
+
+    <!-- start banner -->
+    <div class="info-banner">
+        <div class="container">
+            <div class="personal-info d-flex align-items-center">
+                <div class="personal-img">
+                    <img class='rounded-circle' src="https://placehold.it/150x150" alt="">
+                </div>
+                <div class="personal-title ml-4">
+                    <h2 class='upper-text text-white font-weight-bolder'>jad ghalayini <br><span>agent</span></h2>
+                </div>
+            </div> <!-- ./personal-info -->
+        </div> <!-- ./container -->
+    </div> <!-- ./info-banner -->
+
+    <!-- end banner -->
+
+    <!-- start main section -->
+
+    <section class="main-section py-5">
+        <div class="container-fluid px-4">
+            <div class="row pt-5">
+                <div class="col-xl-3">
+                    <div class="sidebar">
+                        <div class="row">
+                            <div class="col-xl-12 col-sm-6 mt-5">
+                                <ul class='some-info'>
+                                    <li class='border-bottom mb-3 capital-text d-flex justify-content-between'>
+                                        <p>Company</p>
+                                        <span class='d-inline-block font-weight-bolder'>Self Employed</span>
+                                    </li>
+                                    <li class='border-bottom mb-3 capital-text d-flex justify-content-between'>
+                                        <p>Number of players</p>
+                                        <span class='d-inline-block font-weight-bolder'>23</span>
+                                    </li>
+                                </ul> <!-- ./some-info -->
+                            </div> <!-- ./col-xl-12 col-sm-6 -->
+                            <div class="col-xl-12 col-sm-6 mt-5">
+                                <div class="follow">
+                                    <h3 class='capital-text font-weight-bolder'>Looking for</h3>
+                                    <p>Defender</p>
+                                    <p>Goalkeeper</p>
+                                </div> <!-- ./follow -->
+                            </div> <!-- ./col-xl-12 col-sm-6 -->
+                        </div> <!-- ./row -->
+                    </div> <!-- ./sidebar -->
+                </div> <!--- ./col-xl-3 -->
+                <div class="col-xl-9 mt-5 mt-xl-0">
+                    <div id="tabs">
+                        <ul>
+                            <li><a href="#tabs-1">overview</a></li>
+                        </ul>
+                        <div id="tabs-1" class='wrapping-tab'>
+                            <div class="overview-tab p-md-4 p-2">
+                                <h2 class='capital-text font-weight-bolder mb-4'>personal details</h2>
+                                <div class="player-info">
+                                    <table class="table w-50" id='details-table'>
+                                        <thead>
+                                            <tr>
+                                                <td scope="col">Nationality</td>
+                                                <td scope="col" class='text-center'>Date Of Birtd</td>
+                                                <td scope="col" class='text-center'>Height</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th><h5 class='font-weight-bolder'>EGYPT</h5></th>
+                                                <th class='text-center'><h5 class='font-weight-bolder'>02/06/1988 (31)</h5></th>
+                                                <th class='text-center'><h5 class='font-weight-bolder'>173cm</h5></th>
+                                            </tr>
+                                        </tbody>
+                                    </table> <!-- ./table -->
+                                </div> <!-- ./player-info -->
+                                <div class="playing-career">
+                                    <h2 class='capital-text font-weight-bolder mt-5 mb-4'>playing career</h2>
+                                    <div class="player-career">
+                                        <table id='career-table' class="table w-100">
+                                            <thead>
+                                                <tr>
+                                                    <td scope="col">Season</td>
+                                                    <td scope="col">Team</td>
+                                                    <td scope="col">Apps(Subs)</td>
+                                                    <td scope="col">Goals</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>2018/19</th>
+                                                    <th>Manchester United</th>
+                                                    <th>33 (2)</th>
+                                                    <th>12</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>2018/19</th>
+                                                    <th>Manchester United</th>
+                                                    <th>33 (2)</th>
+                                                    <th>12</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>2018/19</th>
+                                                    <th>Manchester United</th>
+                                                    <th>33 (2)</th>
+                                                    <th>12</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>2018/19</th>
+                                                    <th>Manchester United</th>
+                                                    <th>33 (2)</th>
+                                                    <th>12</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>2018/19</th>
+                                                    <th>Manchester United</th>
+                                                    <th>33 (2)</th>
+                                                    <th>12</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>2018/19</th>
+                                                    <th>Manchester United</th>
+                                                    <th>33 (2)</th>
+                                                    <th>12</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>2018/19</th>
+                                                    <th>Manchester United</th>
+                                                    <th>33 (2)</th>
+                                                    <th>12</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>2018/19</th>
+                                                    <th>Manchester United</th>
+                                                    <th>33 (2)</th>
+                                                    <th>12</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>2018/19</th>
+                                                    <th>Manchester United</th>
+                                                    <th>33 (2)</th>
+                                                    <th>12</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>2018/19</th>
+                                                    <th>Manchester United</th>
+                                                    <th>33 (2)</th>
+                                                    <th>12</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>2018/19</th>
+                                                    <th>Manchester United</th>
+                                                    <th>33 (2)</th>
+                                                    <th>12</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>2018/19</th>
+                                                    <th>Manchester United</th>
+                                                    <th>33 (2)</th>
+                                                    <th>12</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>2018/19</th>
+                                                    <th>Manchester United</th>
+                                                    <th>33 (2)</th>
+                                                    <th>12</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>2018/19</th>
+                                                    <th>Manchester United</th>
+                                                    <th>33 (2)</th>
+                                                    <th>12</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>2018/19</th>
+                                                    <th>Manchester United</th>
+                                                    <th>33 (2)</th>
+                                                    <th>12</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div> <!-- ./player-career -->
+                                </div> <!-- ./playing-career -->
+                                <div class="player-video">
+                                    <h2 class='capital-text font-weight-bolder mt-5 mb-4'>player video</h2>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-sm-6 mb-3">
+                                            <div class="video">
+                                                <iframe src="https://www.youtube.com/embed/5vENehfAMTc"></iframe>
+                                            </div>
+                                        </div> <!-- ./col-lg-4 -->
+                                        <div class="col-lg-4 col-sm-6 mb-3">
+                                            <div class="video">
+                                                <iframe src="https://www.youtube.com/embed/5vENehfAMTc"></iframe>
+                                            </div>
+                                        </div> <!-- ./col-lg-4 -->
+                                        <div class="col-lg-4 col-sm-6 mb-3">
+                                            <div class="video">
+                                                <iframe src="https://www.youtube.com/embed/5vENehfAMTc"></iframe>
+                                            </div>
+                                        </div> <!-- ./col-lg-4 -->
+                                    </div> <!-- ./row -->
+                                    <div class="cta-btn mt-3">
+                                        <a href="">See More</a>
+                                    </div>
+                                </div> <!-- ./player-video -->
+                            </div> <!-- ./overview-tab -->
+                        </div> <!-- ./tabs-1 -->
+                    </div> <!-- ./tabs -->
+                </div> <!-- ./col-xl-9 -->
+            </div> <!-- ./row -->
+        </div> <!-- ./container -->
+    </section> <!-- end main section -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-3.4.1.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/pace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $(function () {
+            $("#tabs").tabs().addClass("ui-tabs-vertical ui-helper-clearfix");
+            $("#tabs li").removeClass("ui-corner-top").addClass("ui-corner-left");
+            $('#career-table').DataTable({
+                responsive: true,
+                // pagingType:'full_numbers', // last/first button
+                // searching: false, //search box
+                // ordering: false, //sorting
+                // paging: false, // pagination
+                scrollCollapse: true,
+                scrollY: 300,
+                scrollX: true
+            });
+        });
+    </script>
+</body>
+
+</html>
